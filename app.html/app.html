@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atelier Cafe</title>
+    <meta
+      name="description"
+      content="Уютное городское кафе с авторскими завтраками, кофе и десертами."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="header">
+        <div class="container header__inner">
+          <a class="logo" href="#home">
+            <span class="logo__mark">AC</span>
+            <span class="logo__text">
+              Atelier Cafe
+              <small>slow mornings & late brunch</small>
+            </span>
+          </a>
+
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            aria-controls="site-menu"
+          >
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="nav" id="site-menu">
+            <a href="#menu">Меню</a>
+            <a href="#about">О нас</a>
+            <a href="#gallery">Атмосфера</a>
+            <a href="#contacts">Контакты</a>
+            <a class="nav__button" href="#booking">Забронировать</a>
+          </nav>
+        </div>
+      </header>
+
+      <main id="home">
+        <section class="hero">
+          <div class="container hero__grid">
+            <div class="hero__content reveal">
+              <p class="eyebrow">Кафе в центре города</p>
+              <h1>Теплое место для кофе, завтраков и долгих разговоров.</h1>
+              <p class="hero__text">
+                Авторские тосты, свежая выпечка, сезонные десерты и спокойная
+                атмосфера, в которую хочется возвращаться утром, днем и вечером.
+              </p>
+              <div class="hero__actions">
+                <a class="button button--primary" href="#booking">Столик онлайн</a>
+                <a class="button button--ghost" href="#menu">Посмотреть меню</a>
+              </div>
+              <ul class="hero__facts">
+                <li>с 08:00 до 22:00</li>
+                <li>завтраки весь день</li>
+                <li>кофе specialty</li>
+              </ul>
+            </div>
+
+            <div class="hero__visual reveal reveal--delay">
+              <div class="hero-card hero-card--tall">
+                <span>signature</span>
+                <strong>Карамельный раф с морской солью</strong>
+              </div>
+              <div class="hero-card hero-card--accent">
+                <span>chef choice</span>
+                <strong>Бриошь с лососем и кремом из авокадо</strong>
+              </div>
+              <div class="hero-photo">
+                <div class="hero-photo__badge">new seasonal menu</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="highlights">
+          <div class="container highlights__grid">
+            <article class="highlight-card reveal">
+              <p>Завтраки</p>
+              <h2>До самого вечера</h2>
+              <span>сырники, омлеты, круассаны, тосты</span>
+            </article>
+            <article class="highlight-card reveal reveal--delay">
+              <p>Кофе</p>
+              <h2>Собственная карта зерна</h2>
+              <span>эспрессо, фильтр, авторские напитки</span>
+            </article>
+            <article class="highlight-card reveal reveal--long">
+              <p>Десерты</p>
+              <h2>Меняются по сезону</h2>
+              <span>тарталетки, чизкейк, лимонный кекс</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="menu-section" id="menu">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Меню</p>
+              <h2>Любимые позиции гостей</h2>
+            </div>
+
+            <div class="menu-grid">
+              <article class="menu-card reveal">
+                <div class="menu-card__top">
+                  <h3>Французский завтрак</h3>
+                  <span>290 грн</span>
+                </div>
+                <p>Круассан, яйцо пашот, мягкий сыр, салат и джем из инжира.</p>
+              </article>
+              <article class="menu-card reveal reveal--delay">
+                <div class="menu-card__top">
+                  <h3>Тост с лососем</h3>
+                  <span>340 грн</span>
+                </div>
+                <p>Бриошь, слабосоленый лосось, крем из авокадо и зелень.</p>
+              </article>
+              <article class="menu-card reveal reveal--long">
+                <div class="menu-card__top">
+                  <h3>Кремовый капучино</h3>
+                  <span>145 грн</span>
+                </div>
+                <p>Мягкий вкус арабики с плотной молочной текстурой.</p>
+              </article>
+              <article class="menu-card reveal">
+                <div class="menu-card__top">
+                  <h3>Сырники с ванилью</h3>
+                  <span>265 грн</span>
+                </div>
+                <p>Подаются с кремом маскарпоне, ягодами и соленой карамелью.</p>
+              </article>
+              <article class="menu-card reveal reveal--delay">
+                <div class="menu-card__top">
+                  <h3>Баскский чизкейк</h3>
+                  <span>210 грн</span>
+                </div>
+                <p>Нежный центр, карамельная корочка и ягодный соус.</p>
+              </article>
+              <article class="menu-card reveal reveal--long">
+                <div class="menu-card__top">
+                  <h3>Цитрусовый фильтр</h3>
+                  <span>160 грн</span>
+                </div>
+                <p>Яркий аромат, чистый вкус и легкое фруктовое послевкусие.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="about-section" id="about">
+          <div class="container about-section__grid">
+            <div class="about-section__content reveal">
+              <p class="eyebrow">О нас</p>
+              <h2>Интерьер, в котором тихо, светло и спокойно.</h2>
+              <p>
+                Мы собрали пространство с натуральными фактурами, мягким светом
+                и акцентом на неторопливый сервис. Здесь удобно начать день,
+                встретиться с друзьями или поработать за чашкой фильтра.
+              </p>
+            </div>
+            <div class="about-metrics reveal reveal--delay">
+              <div>
+                <strong>4.9</strong>
+                <span>средняя оценка гостей</span>
+              </div>
+              <div>
+                <strong>28</strong>
+                <span>посадочных мест</span>
+              </div>
+              <div>
+                <strong>12</strong>
+                <span>сезонных позиций в меню</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="gallery-section" id="gallery">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Атмосфера</p>
+              <h2>Свет, дерево, текстиль и мягкие акценты.</h2>
+            </div>
+            <div class="gallery-grid">
+              <div class="gallery-tile gallery-tile--large reveal"></div>
+              <div class="gallery-tile reveal reveal--delay"></div>
+              <div class="gallery-tile reveal reveal--long"></div>
+              <div class="gallery-tile gallery-tile--wide reveal"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="booking-section" id="booking">
+          <div class="container booking-section__box reveal">
+            <div>
+              <p class="eyebrow">Бронирование</p>
+              <h2>Оставьте заявку, и мы подтвердим столик в течение 10 минут.</h2>
+            </div>
+            <form class="booking-form">
+              <label>
+                <span>Имя</span>
+                <input type="text" placeholder="Ваше имя" />
+              </label>
+              <label>
+                <span>Телефон</span>
+                <input type="tel" placeholder="+380" />
+              </label>
+              <label>
+                <span>Дата</span>
+                <input type="date" />
+              </label>
+              <button class="button button--primary" type="submit">
+                Отправить заявку
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer" id="contacts">
+        <div class="container footer__grid">
+          <div>
+            <a class="logo logo--footer" href="#home">
+              <span class="logo__mark">AC</span>
+              <span class="logo__text">
+                Atelier Cafe
+                <small>вул. Затишна, 18</small>
+              </span>
+            </a>
+          </div>
+          <div class="footer__info">
+            <a href="tel:+380671234567">+380 67 123 45 67</a>
+            <a href="mailto:hello@atelier.cafe">hello@atelier.cafe</a>
+          </div>
+          <div class="footer__info">
+            <span>Пн-Нд: 08:00-22:00</span>
+            <span>Instagram: @atelier.cafe</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
